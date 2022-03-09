@@ -4,14 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable-v24/gopay_shape.xml" value="0.1" />
+        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/arrow_forward.xml" value="0.1005" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/gopay_putih.xml" value="0.1" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/ic_bayar.xml" value="0.1" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/ic_explore.xml" value="0.1" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/ic_isi_saldo.xml" value="0.1" />
+        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/ic_like.xml" value="0.1005" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/ic_profile.xml" value="0.1" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/icon_slider.xml" value="0.1" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/search.xml" value="0.1" />
-        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
     </option>
   </component>
