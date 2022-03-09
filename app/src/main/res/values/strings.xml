@@ -1,15 +1,15 @@
 <resources>
     <string name="app_name">Challenge2Binar</string>
     <string name="search">Cari Layanan, Makanan, &amp; Tujuan</string>
-    <string name="string_bayar">Bayar</string>
-    <string name="string_eksplor">Eksplor</string>
-    <string name="string_isi_saldo">Isi Saldo</string>
-    <string name="text_goride">GoRide</string>
-    <string name="text_gocar">GoCar</string>
-    <string name="text_gofood">GoFood</string>
-    <string name="text_gosend">GoSend</string>
-    <string name="text_gomart">GoMart</string>
-    <string name="text_gopulsa">GoPulsa</string>
-    <string name="text_check_in">Check in</string>
-    <string name="text_lainnya">Lainnya</string>
+    <string name="bayar">Bayar</string>
+    <string name="eksplore">Eksplore</string>
+    <string name="isi_saldo">Isi Saldo</string>
+    <string name="goride">GoRide</string>
+    <string name="gocar">GoCar</string>
+    <string name="gofood">GoFood</string>
+    <string name="gosend">GoSend</string>
+    <string name="gomart">GoMart</string>
+    <string name="gopulsa">GoPulsa</string>
+    <string name="check_in">Check in</string>
+    <string name="lainnya">Lainnya</string>
 </resources>
