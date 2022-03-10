@@ -6,11 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/hijau_gojek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
         <ImageButton
@@ -19,8 +23,11 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/hijau_gojek"
             android:src="@drawable/ic_profile"
-            tools:layout_editor_absoluteX="340dp"
-            tools:layout_editor_absoluteY="9dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/view_search_bar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <SearchView
             android:id="@+id/view_search_bar"
@@ -79,7 +86,40 @@
                     android:background="@drawable/gopay_putih"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"></androidx.constraintlayout.widget.ConstraintLayout>
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/image_icon_judul_balance_gocoins"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="12dp"
+                        android:src="@drawable/ic_wallet"
+                        app:tint="@color/biru_gopay"
+                        app:layout_constraintBottom_toBottomOf="@+id/text_judul_balance_gocoins"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_judul_balance_gocoins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/text_gopay"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toTopOf="@id/text_balance_gocoins"
+                        app:layout_constraintStart_toEndOf="@id/image_icon_judul_balance_gocoins"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_balance_gocoins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/detail"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/hijau_gojek"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/text_judul_balance_gocoins" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
@@ -101,7 +141,8 @@
                         app:layout_constraintEnd_toStartOf="@id/image_isi_saldo"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:tint="@color/biru_gopay" />
+                        app:tint="@color/biru_gopay"
+                        android:contentDescription="TODO" />
 
                     <TextView
                         android:id="@+id/text_balance_bayar"
@@ -110,6 +151,7 @@
                         android:fontFamily="sans-serif-medium"
                         android:text="@string/bayar"
                         android:textColor="@color/white"
+                        android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@id/image_icon_bayar"
                         app:layout_constraintStart_toStartOf="@id/image_icon_bayar"
@@ -127,7 +169,8 @@
                         app:layout_constraintEnd_toStartOf="@id/image_explore"
                         app:layout_constraintStart_toEndOf="@id/image_icon_bayar"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:tint="@color/biru_gopay" />
+                        app:tint="@color/biru_gopay"
+                        android:contentDescription="TODO" />
 
                     <TextView
                         android:id="@+id/text_balance_isi_saldo"
@@ -136,6 +179,7 @@
                         android:fontFamily="sans-serif-medium"
                         android:text="@string/isi_saldo"
                         android:textColor="@color/white"
+                        android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@id/image_isi_saldo"
                         app:layout_constraintStart_toStartOf="@id/image_isi_saldo"
@@ -153,7 +197,8 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/image_isi_saldo"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:tint="@color/biru_gopay" />
+                        app:tint="@color/biru_gopay"
+                        android:contentDescription="TODO" />
 
                     <TextView
                         android:id="@+id/text_balance_eksplor"
@@ -162,6 +207,7 @@
                         android:fontFamily="sans-serif-medium"
                         android:text="@string/eksplore"
                         android:textColor="@color/white"
+                        android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="@id/image_explore"
                         app:layout_constraintStart_toStartOf="@id/image_explore"
@@ -179,6 +225,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 app:layout_constraintEnd_toEndOf="@id/constraint_gopay"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@id/constraint_gopay"
                 app:layout_constraintTop_toBottomOf="@id/constraint_gopay">
 
@@ -200,6 +247,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/goride"
+                    android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="@id/menu_goride"
                     app:layout_constraintStart_toStartOf="@id/menu_goride"
                     app:layout_constraintTop_toBottomOf="@id/menu_goride" />
@@ -209,6 +257,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
+                    android:contentDescription="TODO"
                     android:maxWidth="64dp"
                     android:src="@drawable/gocar"
                     app:layout_constraintEnd_toStartOf="@id/menu_gofood"
@@ -221,6 +270,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/gocar"
+                    android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="@id/menu_gocar"
                     app:layout_constraintStart_toStartOf="@id/menu_gocar"
                     app:layout_constraintTop_toBottomOf="@id/menu_gocar" />
@@ -230,6 +280,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
+                    android:contentDescription="TODO"
                     android:maxWidth="64dp"
                     android:src="@drawable/gofood"
                     app:layout_constraintEnd_toStartOf="@id/menu_gosend"
@@ -242,6 +293,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/gofood"
+                    android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="@id/menu_gofood"
                     app:layout_constraintStart_toStartOf="@id/menu_gofood"
                     app:layout_constraintTop_toBottomOf="@id/menu_gofood" />
@@ -251,6 +303,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
+                    android:contentDescription="TODO"
                     android:maxWidth="64dp"
                     android:src="@drawable/gosend"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -263,6 +316,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/gosend"
+                    android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="@id/menu_gosend"
                     app:layout_constraintStart_toStartOf="@id/menu_gosend"
                     app:layout_constraintTop_toBottomOf="@id/menu_gosend" />
@@ -272,6 +326,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
+                    android:contentDescription="TODO"
                     android:maxWidth="64dp"
                     android:src="@drawable/gomart"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -285,6 +340,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/gomart"
+                    android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="@id/menu_gomart"
                     app:layout_constraintStart_toStartOf="@id/menu_gomart"
                     app:layout_constraintTop_toBottomOf="@id/menu_gomart" />
@@ -294,12 +350,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
+                    android:contentDescription="TODO"
                     android:maxWidth="64dp"
                     android:src="@drawable/gopulsa"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/menu_gocar"
                     app:layout_constraintStart_toStartOf="@+id/menu_gocar"
-                    app:layout_constraintTop_toTopOf="@+id/text_gorcar" />
+                    app:layout_constraintTop_toTopOf="@+id/text_gorcar"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/text_gopulsa"
@@ -307,6 +365,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/gopulsa"
+                    android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="@id/menu_gopulsa"
                     app:layout_constraintStart_toStartOf="@id/menu_gopulsa"
                     app:layout_constraintTop_toBottomOf="@id/menu_gopulsa" />
@@ -316,12 +375,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
+                    android:contentDescription="TODO"
                     android:maxWidth="64dp"
                     android:src="@drawable/pedulilindungi"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/menu_gofood"
                     app:layout_constraintStart_toStartOf="@+id/menu_gofood"
-                    app:layout_constraintTop_toBottomOf="@+id/menu_gofood" />
+                    app:layout_constraintTop_toBottomOf="@+id/menu_gofood"
+                    tools:ignore="ImageContrastCheck" />
 
                 <TextView
                     android:id="@+id/text_checkin"
@@ -329,6 +390,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/check_in"
+                    android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="@id/menu_checkin"
                     app:layout_constraintStart_toStartOf="@id/menu_checkin"
                     app:layout_constraintTop_toBottomOf="@id/menu_checkin" />
@@ -338,6 +400,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:adjustViewBounds="true"
+                    android:contentDescription="TODO"
                     android:maxWidth="64dp"
                     android:src="@drawable/lainnya"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -351,6 +414,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/lainnya"
+                    android:textSize="12sp"
                     app:layout_constraintEnd_toEndOf="@id/menu_lainnya"
                     app:layout_constraintStart_toStartOf="@id/menu_lainnya"
                     app:layout_constraintTop_toBottomOf="@id/menu_lainnya" />
@@ -358,10 +422,377 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_bintang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/rounded_xp"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_main_menu"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="16dp">
 
+                <ImageButton
+                    android:id="@+id/bintang_xp"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:background="@drawable/go_club_bg"
+                    android:contentDescription="TODO"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck">
+
+                </ImageButton>
+
+                <ImageView
+                    android:id="@+id/bintang"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/goclub"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/progress_xp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ImageContrastCheck" />
+
+                <ProgressBar
+                    android:id="@+id/progress_xp"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:progress="80"
+                    app:indicatorColor="@color/hijau_gojek"
+                    app:layout_constraintBottom_toTopOf="@id/text_xp"
+                    app:layout_constraintEnd_toStartOf="@id/arrow_right"
+                    app:layout_constraintStart_toEndOf="@id/bintang"
+                    app:layout_constraintTop_toBottomOf="@id/harta_hilang" />
+
+                <TextView
+                    android:id="@+id/text_xp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_xp"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@id/progress_xp"
+                    app:layout_constraintStart_toStartOf="@id/progress_xp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/time_progress"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_time_progress"
+                    app:layout_constraintBottom_toBottomOf="@+id/harta_hilang"
+                    app:layout_constraintEnd_toStartOf="@id/harta_hilang"
+                    app:layout_constraintStart_toStartOf="@+id/progress_xp"
+                    app:layout_constraintTop_toTopOf="@id/harta_hilang"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/harta_hilang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/harta_hilang"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/time_progress"
+                    app:layout_constraintTop_toBottomOf="@id/progress_xp" />
+
+                <ImageButton
+                    android:id="@+id/arrow_right"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/ic_arrow_right"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                    android:contentDescription="TODO" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/akses_cepat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/akses"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.003"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraint_bintang" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_menu_akses_cepat"
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/rounded_akses"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraint_bintang">
+
+                <ImageView
+                    android:id="@+id/image_diskon_akses_cepat"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/voucher"
+                    app:layout_constraintBottom_toTopOf="@id/line_promo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:id="@+id/text_diskon_akses_cepat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/voucher"
+                    app:layout_constraintBottom_toBottomOf="@+id/image_diskon_akses_cepat"
+                    app:layout_constraintStart_toEndOf="@id/image_diskon_akses_cepat"
+                    app:layout_constraintTop_toTopOf="@+id/image_diskon_akses_cepat" />
+
+                <ImageButton
+                    android:id="@+id/arrow_foward"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="18dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/arrow_forward"
+                    app:layout_constraintBottom_toBottomOf="@id/line_promo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+                    android:contentDescription="TODO" />
+
+                <View
+                    android:id="@+id/line_promo"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_promo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/restoran"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/gofoodflat"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line_promo"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:id="@+id/text_restoran_akses_cepat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/restoran"
+                    app:layout_constraintBottom_toBottomOf="@+id/restoran"
+                    app:layout_constraintStart_toEndOf="@id/restoran"
+                    app:layout_constraintTop_toTopOf="@+id/restoran" />
+
+                <ImageButton
+                    android:id="@+id/button_panah_akses_cepat_restoran"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="18dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/arrow_forward"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line_promo"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+                    android:contentDescription="TODO" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_iklan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/rounded_akses"
+                app:layout_constraintEnd_toEndOf="@id/constraint_menu_akses_cepat"
+                app:layout_constraintStart_toStartOf="@id/constraint_menu_akses_cepat"
+                app:layout_constraintTop_toBottomOf="@id/constraint_menu_akses_cepat"
+                app:layout_constraintBottom_toTopOf="@id/guideline_navbar"
+                tools:ignore="NotSibling">
+
+                <ImageView
+                    android:id="@+id/iklan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/banner_gopay"
+                    app:layout_constraintBottom_toTopOf="@id/text_iklan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_iklan"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="16dp"
+                    android:text="@string/iklan"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iklan" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:id="@+id/space_iklan"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                app:layout_constraintBottom_toTopOf="@id/guideline_navbar"
+                app:layout_constraintTop_toBottomOf="@id/constraint_iklan"
+                tools:ignore="NotSibling" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </ScrollView>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_navbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+    <!--navbar-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_navbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_xp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_navbar">
+
+        <ImageButton
+            android:id="@+id/image_navbar_home"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/akses"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home"
+            app:layout_constraintBottom_toTopOf="@id/text_navbar_home"
+            app:layout_constraintEnd_toStartOf="@id/image_navbar_promo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/hijau_gojek"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/text_navbar_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/home"
+            android:textColor="#2E7D32"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/image_navbar_home"
+            app:layout_constraintStart_toStartOf="@id/image_navbar_home"
+            app:layout_constraintTop_toBottomOf="@id/image_navbar_home" />
+
+        <ImageButton
+            android:id="@+id/image_navbar_promo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="TODO"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_discount"
+            app:layout_constraintBottom_toTopOf="@id/text_navbar_promo"
+            app:layout_constraintEnd_toStartOf="@id/image_navbar_pesanan"
+            app:layout_constraintStart_toEndOf="@id/image_navbar_home"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/icon_navbar"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/text_navbar_promo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/promo"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/image_navbar_promo"
+            app:layout_constraintStart_toStartOf="@id/image_navbar_promo"
+            app:layout_constraintTop_toBottomOf="@id/image_navbar_promo" />
+
+        <ImageButton
+            android:id="@+id/image_navbar_pesanan"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_pesanan"
+            app:layout_constraintBottom_toTopOf="@id/text_navbar_pesanan"
+            app:layout_constraintEnd_toStartOf="@id/image_navbar_chat"
+            app:layout_constraintStart_toEndOf="@id/image_navbar_promo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/icon_navbar"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/text_navbar_pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/pesanan"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/image_navbar_pesanan"
+            app:layout_constraintStart_toStartOf="@id/image_navbar_pesanan"
+            app:layout_constraintTop_toBottomOf="@id/image_navbar_pesanan" />
+
+        <ImageButton
+            android:id="@+id/image_navbar_chat"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_chat"
+            app:layout_constraintBottom_toTopOf="@id/text_navbar_chat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_navbar_pesanan"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/icon_navbar"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/text_navbar_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/chat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/image_navbar_chat"
+            app:layout_constraintStart_toStartOf="@id/image_navbar_chat"
+            app:layout_constraintTop_toBottomOf="@id/image_navbar_chat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

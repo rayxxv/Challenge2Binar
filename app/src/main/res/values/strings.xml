@@ -12,4 +12,17 @@
     <string name="gopulsa">GoPulsa</string>
     <string name="check_in">Check in</string>
     <string name="lainnya">Lainnya</string>
+    <string name="akses">Akses Cepat</string>
+    <string name="voucher">Ada voucher nganggur nih</string>
+    <string name="iklan">"<b>Festival idaman Perempuan!</b> \nTemukan kebutuhan cantik-mu hemat pakai GoPay dengan cashback 50%. Klik!"</string>
+    <string name="restoran">Restoran terdekat</string>
+    <string name="harta_hilang">Harta Karun bentar lagi hilang</string>
+    <string name="text_xp">999 XP Lagi Ada Harta Karun</string>
+    <string name="home">Beranda</string>
+    <string name="promo">Promo</string>
+    <string name="pesanan">Pesanan</string>
+    <string name="chat">Chat</string>
+    <string name="text_gopay"><b>gopay</b> coins</string>
+    <string name="todo">TODO</string>
+    <string name="detail"><b><font color="#000000">999</font></b>\n<font color="#00AA13">Tap for details</font></string>
 </resources>
