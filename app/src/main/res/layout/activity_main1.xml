@@ -118,6 +118,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/location"
+                android:layout_marginStart="4dp"
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@id/location"
@@ -127,6 +128,8 @@
                 android:id="@+id/id_kirim"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="4dp"
                 android:background="@color/transparant"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_kirim"
@@ -231,196 +234,6 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@id/constraint_gopay"
                 app:layout_constraintTop_toBottomOf="@id/constraint_gopay">
-
-                <ImageView
-                    android:id="@+id/menu_goride"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="@string/goride"
-                    android:maxWidth="56dp"
-                    android:src="@drawable/goride"
-                    app:layout_constraintEnd_toStartOf="@id/menu_gocar"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/text_goride"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="@string/goride"
-                    android:textSize="12sp"
-                    app:layout_constraintEnd_toEndOf="@id/menu_goride"
-                    app:layout_constraintStart_toStartOf="@id/menu_goride"
-                    app:layout_constraintTop_toBottomOf="@id/menu_goride" />
-
-                <ImageView
-                    android:id="@+id/menu_gocar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="TODO"
-                    android:maxWidth="64dp"
-                    android:src="@drawable/gocar"
-                    app:layout_constraintEnd_toStartOf="@id/menu_gofood"
-                    app:layout_constraintStart_toEndOf="@id/menu_goride"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/text_gorcar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="@string/gocar"
-                    android:textSize="12sp"
-                    app:layout_constraintEnd_toEndOf="@id/menu_gocar"
-                    app:layout_constraintStart_toStartOf="@id/menu_gocar"
-                    app:layout_constraintTop_toBottomOf="@id/menu_gocar" />
-
-                <ImageView
-                    android:id="@+id/menu_gofood"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="TODO"
-                    android:maxWidth="64dp"
-                    android:src="@drawable/gofood"
-                    app:layout_constraintEnd_toStartOf="@id/menu_gosend"
-                    app:layout_constraintStart_toEndOf="@id/menu_gocar"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/text_gofood"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="@string/gofood"
-                    android:textSize="12sp"
-                    app:layout_constraintEnd_toEndOf="@id/menu_gofood"
-                    app:layout_constraintStart_toStartOf="@id/menu_gofood"
-                    app:layout_constraintTop_toBottomOf="@id/menu_gofood" />
-
-                <ImageView
-                    android:id="@+id/menu_gosend"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="TODO"
-                    android:maxWidth="64dp"
-                    android:src="@drawable/gosend"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/menu_gofood"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/text_gosend"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="@string/gosend"
-                    android:textSize="12sp"
-                    app:layout_constraintEnd_toEndOf="@id/menu_gosend"
-                    app:layout_constraintStart_toStartOf="@id/menu_gosend"
-                    app:layout_constraintTop_toBottomOf="@id/menu_gosend" />
-
-                <ImageView
-                    android:id="@+id/menu_gomart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="TODO"
-                    android:maxWidth="64dp"
-                    android:src="@drawable/gomart"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/menu_goride"
-                    app:layout_constraintStart_toStartOf="@+id/menu_goride"
-                    app:layout_constraintTop_toTopOf="@+id/text_goride" />
-
-                <TextView
-                    android:id="@+id/text_gomart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="@string/gomart"
-                    android:textSize="12sp"
-                    app:layout_constraintEnd_toEndOf="@id/menu_gomart"
-                    app:layout_constraintStart_toStartOf="@id/menu_gomart"
-                    app:layout_constraintTop_toBottomOf="@id/menu_gomart" />
-
-                <ImageView
-                    android:id="@+id/menu_gopulsa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="TODO"
-                    android:maxWidth="64dp"
-                    android:src="@drawable/gopulsa"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/menu_gocar"
-                    app:layout_constraintStart_toStartOf="@+id/menu_gocar"
-                    app:layout_constraintTop_toTopOf="@+id/text_gorcar"
-                    tools:ignore="ImageContrastCheck" />
-
-                <TextView
-                    android:id="@+id/text_gopulsa"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="@string/gopulsa"
-                    android:textSize="12sp"
-                    app:layout_constraintEnd_toEndOf="@id/menu_gopulsa"
-                    app:layout_constraintStart_toStartOf="@id/menu_gopulsa"
-                    app:layout_constraintTop_toBottomOf="@id/menu_gopulsa" />
-
-                <ImageView
-                    android:id="@+id/menu_checkin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="TODO"
-                    android:maxWidth="64dp"
-                    android:src="@drawable/pedulilindungi"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/menu_gofood"
-                    app:layout_constraintStart_toStartOf="@+id/menu_gofood"
-                    app:layout_constraintTop_toBottomOf="@+id/menu_gofood"
-                    tools:ignore="ImageContrastCheck" />
-
-                <TextView
-                    android:id="@+id/text_checkin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="@string/check_in"
-                    android:textSize="12sp"
-                    app:layout_constraintEnd_toEndOf="@id/menu_checkin"
-                    app:layout_constraintStart_toStartOf="@id/menu_checkin"
-                    app:layout_constraintTop_toBottomOf="@id/menu_checkin" />
-
-                <ImageView
-                    android:id="@+id/menu_lainnya"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="TODO"
-                    android:maxWidth="64dp"
-                    android:src="@drawable/lainnya"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/menu_gosend"
-                    app:layout_constraintStart_toStartOf="@+id/menu_gosend"
-                    app:layout_constraintTop_toBottomOf="@+id/menu_gosend" />
-
-                <TextView
-                    android:id="@+id/text_lainnya"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_regular"
-                    android:text="@string/lainnya"
-                    android:textSize="12sp"
-                    app:layout_constraintEnd_toEndOf="@id/menu_lainnya"
-                    app:layout_constraintStart_toStartOf="@id/menu_lainnya"
-                    app:layout_constraintTop_toBottomOf="@id/menu_lainnya" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
