@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable-v24/elektronik.xml" value="0.1" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable-v24/gopay_shape.xml" value="0.1" />
+        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable-v24/kebutuhan_harian.xml" value="0.1" />
+        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable-v24/lihat_semua.xml" value="0.1" />
+        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable-v24/official_store.xml" value="0.1" />
+        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable-v24/topup.xml" value="0.1" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/arrow_forward.xml" value="0.1005" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/gopay_putih.xml" value="0.1" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
@@ -30,11 +35,12 @@
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/ic_wallet.xml" value="0.1" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/icon_slider.xml" value="0.1" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/id_camera.xml" value="0.166" />
+        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/lengkung_ijo.xml" value="0.2435" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/rounded_akses.xml" value="0.1" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/rounded_xp.xml" value="0.1" />
         <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/drawable/search.xml" value="0.1" />
-        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/layout/activity_main1.xml" value="0.33" />
+        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/braye.LAPTOP-B3CH1893/AndroidStudioProjects/Challenge2Binar/app/src/main/res/layout/activity_main1.xml" value="0.22" />
       </map>
     </option>
   </component>

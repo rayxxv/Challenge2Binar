@@ -32,6 +32,11 @@
     <string name="member">Member Silver</string>
     <string name="Kupon">99 Kupon Baru</string>
     <string name="member_silver">Member Silver</string>
+    <string name="official_store">Official Store</string>
+    <string name="lihat_semua">Lihat Semua</string>
+    <string name="kebutuhan_harian">Kebutuhan Harian</string>
+    <string name="elektronik">Elektronik</string>
+    <string name="topup">Top Up</string>
 
 
 </resources>

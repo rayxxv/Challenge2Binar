@@ -224,17 +224,127 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraint_main_menu"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                app:layout_constraintEnd_toEndOf="@id/constraint_gopay"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@id/constraint_gopay"
+                android:id="@+id/constraint_menu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/constraint_gopay">
 
+                <ImageButton
+                    android:id="@+id/official_store"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="14dp"
+                    android:scaleType="fitCenter"
+                    android:background="@color/transparant"
+                    android:src="@drawable/official_store"
+                    android:contentDescription="@string/official_store"
+                    app:layout_constraintEnd_toStartOf="@id/lihat_semua"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_official_store"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/official_store"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="@id/official_store"
+                    app:layout_constraintStart_toStartOf="@id/official_store"
+                    app:layout_constraintTop_toBottomOf="@id/official_store" />
+
+                <ImageButton
+                    android:id="@+id/lihat_semua"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@color/transparant"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/lihat_semua"
+                    app:layout_constraintEnd_toStartOf="@id/kebutuhan_harian"
+                    app:layout_constraintStart_toEndOf="@id/official_store"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_lihat_semua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lihat_semua"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="@id/lihat_semua"
+                    app:layout_constraintStart_toStartOf="@id/lihat_semua"
+                    app:layout_constraintTop_toBottomOf="@id/lihat_semua" />
+
+
+                <ImageButton
+                    android:id="@+id/kebutuhan_harian"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@color/transparant"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/kebutuhan_harian"
+                    app:layout_constraintEnd_toStartOf="@id/eletronik"
+                    app:layout_constraintStart_toEndOf="@id/lihat_semua"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_kebutuhan_harian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/kebutuhan_harian"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="@id/kebutuhan_harian"
+                    app:layout_constraintStart_toStartOf="@id/kebutuhan_harian"
+                    app:layout_constraintTop_toBottomOf="@id/kebutuhan_harian" />
+
+                <ImageButton
+                    android:id="@+id/eletronik"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="14dp"
+                    android:background="@color/transparant"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/elektronik"
+                    app:layout_constraintEnd_toStartOf="@id/top_up"
+                    app:layout_constraintStart_toEndOf="@id/kebutuhan_harian"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_elektonik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/elektronik"
+                    android:textSize="10sp"
+                    app:layout_constraintEnd_toEndOf="@id/eletronik"
+                    app:layout_constraintStart_toStartOf="@id/eletronik"
+                    app:layout_constraintTop_toBottomOf="@id/eletronik" />
+
+                <ImageButton
+                    android:id="@+id/top_up"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/topup"
+                    android:background="@color/transparant"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/eletronik"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_top_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/topup"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/top_up"
+                    app:layout_constraintStart_toStartOf="@id/top_up"
+                    app:layout_constraintTop_toBottomOf="@id/top_up" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -244,7 +354,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:background="@drawable/rounded_xp"
-                app:layout_constraintTop_toBottomOf="@+id/constraint_main_menu"
+                app:layout_constraintTop_toBottomOf="@+id/constraint_menu"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="16dp">
 
