@@ -35,50 +35,52 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:background="@color/transparant"
-            android:src="@drawable/ic_inbox"
             android:scaleType="fitCenter"
+            android:src="@drawable/ic_inbox"
             app:layout_constraintBottom_toBottomOf="@+id/view_search_bar"
+            app:layout_constraintEnd_toStartOf="@+id/notif"
             app:layout_constraintStart_toEndOf="@+id/view_search_bar"
             app:layout_constraintTop_toTopOf="@+id/view_search_bar"
-            app:layout_constraintEnd_toStartOf="@+id/notif"
-            />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/notif"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:background="@color/transparant"
-            android:src="@drawable/ic_notif"
             android:scaleType="fitCenter"
+            android:src="@drawable/ic_notif"
             app:layout_constraintBottom_toBottomOf="@+id/inbox"
+            app:layout_constraintEnd_toStartOf="@id/troli"
             app:layout_constraintStart_toEndOf="@+id/inbox"
             app:layout_constraintTop_toTopOf="@+id/inbox"
-            app:layout_constraintEnd_toStartOf="@id/troli"
-            />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/troli"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:background="@color/transparant"
-            android:src="@drawable/ic_troli"
             android:scaleType="fitCenter"
+            android:src="@drawable/ic_troli"
             app:layout_constraintBottom_toBottomOf="@id/notif"
+            app:layout_constraintEnd_toStartOf="@id/mini_menu"
             app:layout_constraintStart_toEndOf="@id/notif"
             app:layout_constraintTop_toTopOf="@id/notif"
-            app:layout_constraintEnd_toStartOf="@id/mini_menu" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <ImageButton
             android:id="@+id/mini_menu"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:background="@color/transparant"
-            android:src="@drawable/ic_mini_menu"
             android:scaleType="fitCenter"
+            android:src="@drawable/ic_mini_menu"
             app:layout_constraintBottom_toBottomOf="@id/troli"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/troli"
             app:layout_constraintTop_toTopOf="@id/troli"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -102,6 +104,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
+
             <ImageButton
                 android:id="@+id/location"
                 android:layout_width="18dp"
@@ -111,7 +114,8 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_location"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/text_location"
@@ -124,17 +128,19 @@
                 app:layout_constraintBottom_toBottomOf="@id/location"
                 app:layout_constraintStart_toEndOf="@id/location"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <ImageButton
                 android:id="@+id/id_kirim"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
-                android:layout_marginTop="4dp"
                 android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
                 android:background="@color/transparant"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_kirim"
                 app:layout_constraintStart_toEndOf="@id/text_location"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -157,11 +163,12 @@
                     android:background="@color/transparant"
                     android:scaleType="fitCenter"
                     android:src="@drawable/ic_wallet"
-                    app:tint="@color/biru_gopay"
                     app:layout_constraintBottom_toBottomOf="@id/constraint_gopay"
                     app:layout_constraintEnd_toStartOf="@id/saldo"
                     app:layout_constraintStart_toStartOf="@id/constraint_gopay"
-                    app:layout_constraintTop_toTopOf="@id/constraint_gopay"/>
+                    app:layout_constraintTop_toTopOf="@id/constraint_gopay"
+                    app:tint="@color/biru_gopay"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                 <TextView
                     android:id="@+id/saldo"
@@ -193,11 +200,10 @@
                     android:background="@color/transparant"
                     android:scaleType="fitCenter"
                     android:src="@drawable/member"
+                    app:layout_constraintBottom_toBottomOf="@id/gopay"
                     app:layout_constraintStart_toEndOf="@+id/saldo"
                     app:layout_constraintTop_toTopOf="@id/gopay"
-                    app:layout_constraintBottom_toBottomOf="@id/gopay"
-                    tools:layout_editor_absoluteY="10dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/status_member"
@@ -238,7 +244,7 @@
                     android:id="@+id/menu_satu"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content">
-                   
+
 
                     <ImageButton
                         android:id="@+id/official_store"
@@ -246,12 +252,13 @@
                         android:layout_height="46dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:scaleType="fitCenter"
                         android:background="@color/transparant"
+                        android:scaleType="fitCenter"
                         android:src="@drawable/official_store"
                         app:layout_constraintEnd_toStartOf="@id/lihat_semua"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/text_official_store"
@@ -273,7 +280,8 @@
                         android:src="@drawable/lihat_semua"
                         app:layout_constraintEnd_toStartOf="@id/kebutuhan_harian"
                         app:layout_constraintStart_toEndOf="@id/official_store"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <TextView
                         android:id="@+id/text_lihat_semua"
@@ -296,7 +304,8 @@
                         android:src="@drawable/kebutuhan_harian"
                         app:layout_constraintEnd_toStartOf="@id/eletronik"
                         app:layout_constraintStart_toEndOf="@id/lihat_semua"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/text_kebutuhan_harian"
@@ -319,7 +328,8 @@
                         android:src="@drawable/elektronik"
                         app:layout_constraintEnd_toStartOf="@id/top_up"
                         app:layout_constraintStart_toEndOf="@id/kebutuhan_harian"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/text_elektonik"
@@ -341,7 +351,8 @@
                         android:src="@drawable/topup"
                         app:layout_constraintEnd_toStartOf="@id/pesta"
                         app:layout_constraintStart_toEndOf="@id/eletronik"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/text_top_up"
@@ -364,7 +375,8 @@
                         android:src="@drawable/pesta"
                         app:layout_constraintEnd_toStartOf="@id/keuangan"
                         app:layout_constraintStart_toEndOf="@id/top_up"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/text_pesta"
@@ -473,20 +485,21 @@
                         android:scaleType="fitStart"
                         android:src="@drawable/iklan_1"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                     <ImageButton
                         android:id="@+id/iklan2"
                         android:layout_width="wrap_content"
                         android:layout_height="100dp"
                         android:layout_marginStart="14dp"
-                        android:layout_marginEnd="20dp"
                         android:adjustViewBounds="true"
                         android:background="@color/transparant"
                         android:scaleType="fitStart"
                         android:src="@drawable/iklan_2"
                         app:layout_constraintStart_toEndOf="@id/iklan1"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -513,11 +526,12 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
                         android:background="@color/transparant"
-                        android:src="@drawable/peduli_lindungi"
                         android:scaleType="fitCenter"
+                        android:src="@drawable/peduli_lindungi"
                         app:layout_constraintEnd_toStartOf="@id/bazar"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/text_peduli_lindungi"
@@ -540,7 +554,8 @@
                         android:src="@drawable/festival"
                         app:layout_constraintEnd_toStartOf="@id/live_shopping"
                         app:layout_constraintStart_toEndOf="@id/peduli_lindungi"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <TextView
                         android:id="@+id/text_bazar"
@@ -564,7 +579,8 @@
                         android:src="@drawable/live_shopping"
                         app:layout_constraintEnd_toStartOf="@id/tokopedia_seru"
                         app:layout_constraintStart_toEndOf="@id/bazar"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/text_live_shopping"
@@ -587,7 +603,8 @@
                         android:src="@drawable/mini_games"
                         app:layout_constraintEnd_toStartOf="@id/bangga_lokal"
                         app:layout_constraintStart_toEndOf="@id/live_shopping"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/text_tokopedia_seru"
@@ -610,7 +627,8 @@
                         android:src="@drawable/bangga_lokal"
                         app:layout_constraintEnd_toStartOf="@id/bayar"
                         app:layout_constraintStart_toEndOf="@id/tokopedia_seru"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
                     <TextView
                         android:id="@+id/text_bangga_lokal"
@@ -634,7 +652,8 @@
                         android:src="@drawable/ic_bayar_ditempat"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/bangga_lokal"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     <TextView
                         android:id="@+id/text_bayar"
@@ -752,15 +771,16 @@
                         android:id="@+id/kejardiskon"
                         android:layout_width="96dp"
                         android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:background="@color/transparant"
                         android:layout_marginEnd="14dp"
+                        android:adjustViewBounds="true"
+                        android:background="@color/transparant"
+                        android:scaleType="fitCenter"
                         android:src="@drawable/kejar_diskon"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/produk_satu"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/produk_satu"
@@ -786,7 +806,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                tools:ignore="MissingConstraints" />
+                                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
                             <TextView
                                 android:id="@+id/judul_satu"
@@ -910,7 +930,7 @@
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
-                                tools:ignore="MissingConstraints" />
+                                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
                             <TextView
                                 android:id="@+id/judul_dua"
@@ -971,7 +991,8 @@
                                 android:scaleType="fitCenter"
                                 android:src="@drawable/official_store_small"
                                 app:layout_constraintStart_toStartOf="@id/diskon_2"
-                                app:layout_constraintTop_toBottomOf="@id/diskon_2"/>
+                                app:layout_constraintTop_toBottomOf="@id/diskon_2"
+                                tools:ignore="TouchTargetSizeCheck" />
 
                             <TextView
                                 android:text="@string/konohagakure"
@@ -1258,7 +1279,7 @@
             app:layout_constraintStart_toEndOf="@id/image_navbar_pesanan"
             app:layout_constraintTop_toTopOf="parent"
             app:tint="@color/icon_navbar"
-            />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/text_navbar_chat"
@@ -1283,7 +1304,7 @@
             app:layout_constraintStart_toEndOf="@id/image_navbar_chat"
             app:layout_constraintTop_toTopOf="parent"
             app:tint="@color/icon_navbar"
-             />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/text_navbar_transaksi"
