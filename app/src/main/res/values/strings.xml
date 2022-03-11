@@ -57,6 +57,13 @@
     <string name="harga_asli_satu">Rp. 1.000.000</string>
     <string name="konohagakure">Konohagakure</string>
     <string name="rate">5.0 | Terjual 999</string>
+    <string name="home2">Home</string>
+    <string name="feed">Feed</string>
+    <string name="official">Official Store</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="transaksi">Transaksi</string>
+
+
 
 
 </resources>

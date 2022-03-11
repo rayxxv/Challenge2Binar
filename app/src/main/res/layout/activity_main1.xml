@@ -97,7 +97,7 @@
 
             <View
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="52dp"
                 android:background="@drawable/lengkung_ijo"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -194,6 +194,8 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/member"
                     app:layout_constraintStart_toEndOf="@+id/saldo"
+                    app:layout_constraintTop_toTopOf="@id/gopay"
+                    app:layout_constraintBottom_toBottomOf="@id/gopay"
                     tools:layout_editor_absoluteY="10dp"
                     tools:ignore="MissingConstraints" />
 
@@ -679,7 +681,7 @@
                 android:id="@+id/timer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="8dp"
                 android:backgroundTint="@color/merah"
                 app:cardCornerRadius="12dp"
                 app:layout_constraintStart_toEndOf="@+id/waktu_diskon"
@@ -690,12 +692,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="1dp"
-                    android:layout_marginHorizontal="4dp">
+                    android:layout_marginHorizontal="8dp">
 
                     <ImageView
                         android:id="@+id/icon_jam"
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
                         android:src="@drawable/ic_time_progress"
                         app:tint="@color/white"
                         app:layout_constraintStart_toStartOf="parent"
@@ -1140,7 +1142,7 @@
             <View
                 android:id="@+id/space_iklan"
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
+                android:layout_height="140dp"
                 app:layout_constraintBottom_toTopOf="@id/guideline_navbar"
                 app:layout_constraintTop_toBottomOf="@id/kejar_diskon"
                 tools:ignore="NotSibling" />
@@ -1170,12 +1172,11 @@
             android:background="@android:color/transparent"
             android:contentDescription="@string/akses"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_home"
+            android:src="@drawable/home"
             app:layout_constraintBottom_toTopOf="@id/text_navbar_home"
             app:layout_constraintEnd_toStartOf="@id/image_navbar_promo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:tint="@color/hijau_gojek"
             tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
@@ -1183,7 +1184,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
-            android:text="@string/home"
+            android:text="@string/home2"
             android:textColor="#2E7D32"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -1198,7 +1199,7 @@
             android:background="@android:color/transparent"
             android:contentDescription="TODO"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_discount"
+            android:src="@drawable/feed"
             app:layout_constraintBottom_toTopOf="@id/text_navbar_promo"
             app:layout_constraintEnd_toStartOf="@id/image_navbar_pesanan"
             app:layout_constraintStart_toEndOf="@id/image_navbar_home"
@@ -1211,7 +1212,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
-            android:text="@string/promo"
+            android:text="@string/feed"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/image_navbar_promo"
@@ -1224,7 +1225,7 @@
             android:layout_height="24dp"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_pesanan"
+            android:src="@drawable/official_store_line"
             app:layout_constraintBottom_toTopOf="@id/text_navbar_pesanan"
             app:layout_constraintEnd_toStartOf="@id/image_navbar_chat"
             app:layout_constraintStart_toEndOf="@id/image_navbar_promo"
@@ -1238,7 +1239,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
-            android:text="@string/pesanan"
+            android:text="@string/official"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/image_navbar_pesanan"
@@ -1251,25 +1252,50 @@
             android:layout_height="24dp"
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_chat"
+            android:src="@drawable/wishlish"
             app:layout_constraintBottom_toTopOf="@id/text_navbar_chat"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/image_navbar_transaksi"
             app:layout_constraintStart_toEndOf="@id/image_navbar_pesanan"
             app:layout_constraintTop_toTopOf="parent"
             app:tint="@color/icon_navbar"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck"
-            android:contentDescription="TODO" />
+            />
 
         <TextView
             android:id="@+id/text_navbar_chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
-            android:text="@string/chat"
+            android:text="@string/wishlist"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@id/image_navbar_chat"
             app:layout_constraintStart_toStartOf="@id/image_navbar_chat"
             app:layout_constraintTop_toBottomOf="@id/image_navbar_chat" />
+
+        <ImageButton
+            android:id="@+id/image_navbar_transaksi"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/transaksi"
+            app:layout_constraintBottom_toTopOf="@id/text_navbar_chat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/image_navbar_chat"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/icon_navbar"
+             />
+
+        <TextView
+            android:id="@+id/text_navbar_transaksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/wishlist"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/image_navbar_transaksi"
+            app:layout_constraintStart_toStartOf="@id/image_navbar_transaksi"
+            app:layout_constraintTop_toBottomOf="@id/image_navbar_transaksi" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
