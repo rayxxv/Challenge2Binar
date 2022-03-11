@@ -13,6 +13,7 @@
     <color name="icon_navbar">#a0a0a0</color>
     <color name="hijau_tokped">#21CE7E</color>
     <color name="transparant">#00FFFFFF</color>
-
+    <color name="merah">#D6001C</color>
+    <color name="biru_diskon">#01AFDF</color>
 
 </resources>

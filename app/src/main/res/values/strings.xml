@@ -36,7 +36,27 @@
     <string name="lihat_semua">Lihat Semua</string>
     <string name="kebutuhan_harian">Kebutuhan \n Harian</string>
     <string name="elektronik">Elektronik</string>
-    <string name="top_up_tagihan">Top Up</string>
+    <string name="top_up_tagihan">Top Up\nTagihan</string>
+    <string name="pesta">Perlengkapan\nPesta</string>
+    <string name="keuangan">Keuangan</string>
+    <string name="travel">Travel &amp; Enter\ntainment</string>
+    <string name="gadget">Gadget &amp;\nElektronik</string>
+    <string name="peduli_lindungi">Peduli\nLindungi</string>
+    <string name="festival">Bazar\nHari Ini</string>
+    <string name="live_shopping">Live\nShopping</string>
+    <string name="tokopedia_seru">Tokopedia\nSeru</string>
+    <string name="bangga_lokal">Bangga\nLokal</string>
+    <string name="kejar_diskon">Kejar Diskon Spesial</string>
+    <string name="berakhir_dalam">Berakhir Dalam</string>
+    <string name="timer">00 : 00 : 01</string>
+    <string name="diskon">50%</string>
+    <string name="judul_satu">Noxelic Keycaps PBT Guardian Bravo Pasific Rim</string>
+    <string name="judul_dua">Noxelic Keycaps PBT Cloud - Double Shot 104 Keyset</string>
+    <string name="judul_tiga">RUST Keycaps Mechanical Keyboard Full Set PBT</string>
+    <string name="harga_satu">Rp. 500.000</string>
+    <string name="harga_asli_satu">Rp. 1.000.000</string>
+    <string name="konohagakure">Konohagakure</string>
+    <string name="rate">5.0 | Terjual 999</string>
 
 
 </resources>
